@@ -1,0 +1,85 @@
+#+title:South
+#+author:Sophie Bosio
+
+A bright, summery Emacs theme 🌱☀️🌊
+
+[[./screenshots/primary-screenshot.png]]
+
+I love the [[https://www.nordtheme.com/][Nord theme]] and regularly use the [[https://github.com/doomemacs/themes/tree/master][doom-themes]] port. It's a dark, muted, cool theme that's easy on the eyes.
+
+For some time, I searched for an equivalent light theme to use in the day time, but couldn't find any I liked as much as the Nord theme, so I decided to make my own.
+
+Inspired by Nord, South uses mostly greens and blues, and has low contrast between the different text colours.
+
+The text colours are WCAG AA compliant against the background, except the colour used for the =font-lock-comment-face=.
+
+*Note:*
+
+South is a work in progress and is subject to constant change, at the whims of the +author+ benevolent dictator.
+
+* Screenshots
+
+*Org Mode*
+
+Big screenshot, small text, showing a regular =org-mode= document with different text styles, an agenda, and some tables.
+
+[[./screenshots/org-mode-screenshot.png]]
+
+*Clojure Code*
+
+Some example code, showing Flycheck at work.
+
+[[./screenshots/clojure-screenshot.png]]
+
+* Installation
+
+*Manual Installation*
+
+Clone this repository, usually to some location within your =.emacs.d= directory:
+
+#+begin_src shell
+# With SSH:
+git@github.com:SophieBosio/south.git
+
+# With https:
+https://github.com/SophieBosio/south.git
+#+end_src
+
+And load the file somewhere in your =init.el=:
+
+#+begin_src emacs-lisp
+(load "path/to/south-theme/south-theme.el")
+#+end_src
+
+*use-package*
+
+With Emacs 30+, you can install packages via version control directly with =use-package=:
+
+#+begin_src emacs-lisp
+(use-package south-theme
+  :vc (:url "https://github.com/SophieBosio/south"
+       :rev :newest
+       :branch "main"))
+#+end_src
+
+* Support
+
+Since I developed South for my own personal use, I have only implemented support for the packages I use or have used. Pull requests welcome for additional support.
+
+Otherwise, you can install the theme, use =M-x find-library RET south-theme RET= to open the source code, edit at will, evaluate the buffer and reload the theme.
+
+Currently, South theme defines faces for font lock faces, implicitly supporting most programming languages, and faces for the following packages:
+- =ag=
+- =cider=
+- =company-mode=
+- =consult=
+- =corfu=
+- =diff-hl=
+- =flycheck=
+- =lsp-mode=
+- =magit=
+- =orderless=
+- =org-mode=
+- =vertico=
+
+Copyright 2025 (c) Sophie Bosio
