@@ -11,7 +11,10 @@ For some time, I searched for an equivalent light theme to use in the day time, 
 
 Inspired by Nord, South uses mostly greens and blues, and has low contrast between the different text colours.
 
-The text colours are WCAG AA compliant against the background, except the colour used for the =font-lock-comment-face=.
+The text colours are WCAG AA compliant against the background, except the colour used for the =font-lock-comment-face=, but not WCAG AAA compliant.
+
+I've used the very convenient package [[https://github.com/jasonm23/autothemer][autothemer]] to create the theme, which greatly simplified things.
+I'd heartily recommend it.
 
 *Note:*
 
