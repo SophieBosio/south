@@ -5,7 +5,7 @@
 ;; Author: Sophie Bosio <sophie.bosio@outlook.com>
 ;; URL: https://github.com/SophieBosio/south-theme
 ;; Package-Version: 0.0.1
-;; Package-Requires: ((emacs "26.3") (magit-section "0.1"))
+;; Package-Requires: ((emacs "26.3") (magit-section "0.1") (autothemer "0.2.17"))
 ;; Keywords: nord, light, solarized, blue, green
 
 ;;; License:
