@@ -1,6 +1,6 @@
 ;;; south-theme.el --- A bright, summery companion to Nord  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024  Sophie Bosio
+;; Copyright (C) 2024-2025  Sophie Bosio
 
 ;; Author: Sophie Bosio <sophie.bosio@outlook.com>
 ;; URL: https://github.com/SophieBosio/south-theme

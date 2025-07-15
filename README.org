@@ -85,4 +85,4 @@ Currently, South theme defines faces for font lock faces, implicitly supporting 
 - =org-mode=
 - =vertico=
 
-Copyright 2025 (c) Sophie Bosio
+Copyright 2024-2025 (c) Sophie Bosio
