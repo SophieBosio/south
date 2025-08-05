@@ -67,7 +67,6 @@
 
 	;; Black
 	(black              "#2c3238")
-	(black-faded        "#404040")
 
 	;; Blue
 	(slate-grey         "#374A67")
@@ -115,7 +114,7 @@
 
 	 ;; Emacs UI
 	 (cursor              (:background black))
-	 (mode-line           (:background cool-light-grey :foreground black-faded))
+	 (mode-line           (:background cool-light-grey :foreground black))
      (mode-line-inactive  (:background cool-light-grey :foreground cool-dark-grey))
      (fringe              (:background background))
      (hl-line             (:background darker-background))
@@ -139,7 +138,7 @@
      (alert-urgent-face   (:foreground auburn :background coral  :weight 'bold))
      ;; (trailing-whitespace ())
      ;; (escape-glyph        ())
-     (header-line         (:background cool-light-grey :foreground black-faded))
+     (header-line         (:background cool-light-grey :foreground black))
      (highlight           (:background celadon))
 	 (lazy-highlight      (:background ice))
      (match               (:inherit 'highlight))
@@ -286,9 +285,9 @@
 	 (org-agenda-done               (:inherit    'org-done))
      (org-agenda-dimmed-todo-face   (:foreground cool-dark-grey))
      (org-agenda-date               (:foreground cool-dark-grey   :weight 'ultra-bold))
-     (org-agenda-date-today         (:foreground black-faded        :weight 'ultra-bold))
+     (org-agenda-date-today         (:foreground black            :weight 'ultra-bold))
      (org-agenda-date-weekend       (:foreground cool-dark-grey   :weight 'ultra-bold))
-     (org-agenda-structure          (:foreground slate-grey         :weight 'ultra-bold))
+     (org-agenda-structure          (:foreground slate-grey       :weight 'ultra-bold))
      (org-agenda-clocking           (:background denim))
      (org-upcoming-deadline         (:foreground denim))
      (org-upcoming-distant-deadline (:foreground denim))
@@ -447,7 +446,7 @@
      (corfu--bar       (:foreground aqua))    ;; Inactive scrollbar area
      (corfu-bar        (:background lake))    ;; Scrollbar
      (corfu-border     (:background cool-medium-grey))
-     (corfu-deprecated (:foreground black-faded :background darker-background :strike-through black-faded))
+     (corfu-deprecated (:foreground black :background darker-background :strike-through black))
 
 	 ;; Marginalia
      ;; (marginalia-documentation (:foreground ice))
@@ -555,7 +554,7 @@
 
 	 ;; ;; CIDER
 	 ;; (cider-debug-code-overlay-face ())
-     (cider-deprecated-face             (:foreground black-faded :background cool-light-grey :strike-through cool-medium-grey))
+     (cider-deprecated-face             (:foreground black  :background cool-light-grey :strike-through cool-medium-grey))
      ;; (cider-enlightened-local-face  ())
      (cider-error-highlight-face        (:foreground auburn :background coral))
      (cider-error-overlay-face          (:inherit    'cider-error-highlight-face))
@@ -569,7 +568,7 @@
      ;; (cider-warning-highlight-face  ())
      (cider-stacktrace-error-class-face (:inherit    'error))
      (cider-repl-stderr-face            (:inherit    'error))
-     (cider-stacktrace-ns-face          (:foreground black-faded))
+     (cider-stacktrace-ns-face          (:foreground black))
 
      ;; EROS
      (eros-result-overlay-face (:inherit 'cider-result-overlay-face))
@@ -599,7 +598,7 @@
      (ansi-color-red            (:foreground sunglow))
      (ansi-color-white          (:foreground cool-medium-grey))
      (ansi-color-yellow         (:foreground orange))
-     (ansi-color-bright-black   (:foreground black-faded))
+     (ansi-color-bright-black   (:foreground black))
      (ansi-color-bright-blue    (:foreground crystal))
      (ansi-color-bright-cyan    (:foreground selection))
      (ansi-color-bright-green   (:foreground celadon))
