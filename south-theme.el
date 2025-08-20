@@ -72,7 +72,7 @@
 	(slate-grey         "#374A67")
 	(cobalt             "#0850B5")
 	(denim              "#1D5AB5")
-	(aqua               "#0092af")
+	(aqua               "#0092bf")
     (sky                "#257fc4")
 	
 	;; Green
