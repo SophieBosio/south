@@ -66,7 +66,7 @@
 	(warm-grey          "#787571")
 
 	;; Black
-	(black              "#2c3238")
+	(black              "#2e353d")
 
 	;; Blue
 	(slate-grey         "#374A67")
