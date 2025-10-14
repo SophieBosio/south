@@ -3,7 +3,7 @@
 ;; Copyright (C) 2024-2025  Sophie Bosio
 
 ;; Author: Sophie Bosio <sophie.bosio@outlook.com>
-;; URL: https://github.com/SophieBosio/south-theme
+;; URL: https://github.com/SophieBosio/south
 ;; Package-Version: 0.0.1
 ;; Package-Requires: ((emacs "26.3") (magit-section "0.1") (autothemer "0.2.17"))
 ;; Keywords: nord, light, solarized, blue, green
