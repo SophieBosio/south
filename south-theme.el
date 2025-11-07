@@ -56,45 +56,45 @@
   ((((class color) (min-colors #xFFFFFF))) ;; South is only defined for GUI Emacs
 
    ;; White
-   (background         "#fcfcfd")
-   (darker-background  "#edf2fd")
+   (background            "#fcfcfd")
+   (darker-background     "#edf2fd")
 
    ;; Grey
-   (cool-dark-grey     "#9097a6")
-   (cool-medium-grey   "#b5bac4")
-   (cool-light-grey    "#e4eaf3")
-   (warm-grey          "#787571")
+   (cool-dark-grey        "#9097a6")
+   (cool-medium-grey      "#b5bac4")
+   (cool-light-grey       "#e4eaf3")
+   (warm-grey             "#787571")
 
    ;; Black
-   (black              "#2e353d")
+   (black                 "#2e353d")
 
    ;; Blue
-   (slate-grey         "#374A67")
-   (cobalt             "#0850B5")
-   (denim              "#1D5AB5")
-   (aqua               "#0092bf")
-   (sky                "#257fc4")
+   (slate-grey            "#374A67")
+   (cobalt                "#0850B5")
+   (denim                 "#1D5AB5")
+   (aqua                  "#0092bf")
+   (sky                   "#257fc4")
 
    ;; Green
-   (grass              "#2b9728")
-   (lake               "#008165")
-   (viridian           "#5B9279")
-   (persian            "#499794")
+   (grass                 "#2b9728")
+   (lake                  "#008165")
+   (viridian              "#5B9279")
+   (persian               "#499794")
 
    ;; Yellow
-   (sunglow            "#efc267")
+   (sunglow               "#efc267")
 
    ;; Orange
-   (orange             "#cc4705")
+   (orange                "#cc4705")
 
    ;; Red
-   (auburn             "#c1293d")
+   (auburn                "#c1293d")
 
    ;; Purple
-   (purple             "#615FB9")
+   (purple                "#615FB9")
 
    ;; Yellow
-   (soft-yellow          "#f9e7c3")
+   (soft-yellow           "#f9e7c3")
 
    ;; Background colours
    (selection             "#ceeaff")      ; Medium blue
