@@ -371,24 +371,6 @@
      ;; (diff-indicator-added   (:background ))
      ;; (diff-indicator-removed (:background ))
 
-     ;; ;;; git-gutter
-
-     ;; (git-gutter:modified (:background ))
-     ;; (git-gutter:added    (:background ))
-     ;; (git-gutter:deleted  (:background ))
-
-     ;; ;;; git-gutter+
-
-     ;; (git-gutter+-modified (:background ))
-     ;; (git-gutter+-added    (:background ))
-     ;; (git-gutter+-deleted  (:background ))
-
-     ;; ;;; git-gutter-fringe
-
-     ;; (git-gutter-fr:modified (:background ))
-     ;; (git-gutter-fr:added    (:background ))
-     ;; (git-gutter-fr:deleted  (:background ))
-
      ;; ;;; diff-hl
 
      (diff-hl-change (:foreground ice     :background ice))
@@ -409,13 +391,6 @@
 
 	 ;; Vertico
      (vertico-current (:inherit 'region :extend t))
-
-	 ;; Vertico posframe
-	 ;; (vertico-posframe          ())
-     ;; (vertico-posframe-border   ())
-     ;; (vertico-posframe-border-2 ())
-     ;; (vertico-posframe-border-3 ())
-     ;; (vertico-posframe-border-4 ())
 
      ;; Consult
      (consult-highlight-mark  (:inherit 'highlight))
