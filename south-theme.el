@@ -55,52 +55,52 @@
   ;; Define custom colours
   ((((class color) (min-colors #xFFFFFF))) ;; South is only defined for GUI Emacs
 
-    ;; White
-    (background         "#fcfcfd")
-    (darker-background  "#edf2fd")
+   ;; White
+   (background         "#fcfcfd")
+   (darker-background  "#edf2fd")
 
-    ;; Grey
-	(cool-dark-grey     "#9097a6")
-    (cool-medium-grey   "#b5bac4")
-    (cool-light-grey    "#e4eaf3")
-	(warm-grey          "#787571")
+   ;; Grey
+   (cool-dark-grey     "#9097a6")
+   (cool-medium-grey   "#b5bac4")
+   (cool-light-grey    "#e4eaf3")
+   (warm-grey          "#787571")
 
-	;; Black
-	(black              "#2e353d")
+   ;; Black
+   (black              "#2e353d")
 
-	;; Blue
-	(slate-grey         "#374A67")
-	(cobalt             "#0850B5")
-	(denim              "#1D5AB5")
-	(aqua               "#0092bf")
-    (sky                "#257fc4")
-	
-	;; Green
-	(grass              "#2b9728")
-	(lake               "#008165")
-	(viridian           "#5B9279")
-	(persian            "#499794")
+   ;; Blue
+   (slate-grey         "#374A67")
+   (cobalt             "#0850B5")
+   (denim              "#1D5AB5")
+   (aqua               "#0092bf")
+   (sky                "#257fc4")
 
-	;; Yellow
-	(sunglow            "#efc267")
+   ;; Green
+   (grass              "#2b9728")
+   (lake               "#008165")
+   (viridian           "#5B9279")
+   (persian            "#499794")
 
-    ;; Orange
-    (orange             "#cc4705")
+   ;; Yellow
+   (sunglow            "#efc267")
 
-	;; Red
-    (auburn             "#c1293d")
+   ;; Orange
+   (orange             "#cc4705")
 
-	;; Purple
-	(purple             "#615FB9")
+   ;; Red
+   (auburn             "#c1293d")
 
-    ;; Background colours
-    (selection          "#ceeaff")      ; Medium blue
-	(ice                "#c2d6f2")      ; Dark blue
-    (crystal            "#d9edfc")      ; Light blue
-	(celadon            "#bee4cb")      ; Green
-    (soft-yellow        "#f9e7c3")      ; Yellow
-	(coral              "#f3b1b1")      ; Red
-    )
+   ;; Purple
+   (purple             "#615FB9")
+
+   ;; Background colours
+   (selection          "#ceeaff")      ; Medium blue
+   (ice                "#c2d6f2")      ; Dark blue
+   (crystal            "#d9edfc")      ; Light blue
+   (celadon            "#bee4cb")      ; Green
+   (soft-yellow        "#f9e7c3")      ; Yellow
+   (coral              "#f3b1b1")      ; Red
+   (light-red-highlight "#f8d2d2"))
 
     ;; Set faces
     (
@@ -312,8 +312,8 @@
      ;; (magit-cherry-unmatched            ())
      (magit-diff-file-heading-highlight (:background darker-background))
      (magit-diff-context-highlight      (:background darker-background))
-     ;; (magit-diff-added                  ())
-     ;; (magit-diff-added-highlight        (:foreground viridian))
+     (magit-diff-added                  (:foreground grass :background "#ddffdd"))
+     (magit-diff-added-highlight        (:foreground grass :background "#cceecc"))
      ;; (magit-diff-base                   ())
      ;; (magit-diff-base-highlight         ())
      ;; (magit-diff-context                ())
@@ -322,10 +322,10 @@
      (magit-diff-hunk-heading-highlight (:background crystal))
      ;; (magit-diff-hunk-heading-selection ())
      ;; (magit-diff-lines-heading          ())
-     ;; (magit-diff-removed                ())
-     ;; (magit-diff-removed-highlight      ())
-     ;; (magit-diffstat-added              ())
-     ;; (magit-diffstat-removed            ())
+     (magit-diff-removed                (:foreground auburn :background light-red-highlight))
+     (magit-diff-removed-highlight      (:foreground auburn :background coral))
+     (magit-diffstat-added              (:foreground grass))
+     (magit-diffstat-removed            (:foreground auburn))
      ;; (magit-dimmed                      ())
      ;; (magit-hash                        ())
      ;; (magit-log-author                  ())
@@ -596,7 +596,7 @@
      ;; Misc
      (shr-mark  (:inherit 'highlight))
      (homoglyph (:foreground aqua))
-))
+     ))
 
 (provide-theme 'south)
 
