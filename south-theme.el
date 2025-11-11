@@ -102,7 +102,8 @@
    (light-blue-highlight  "#d9edfc")
    (dark-green-highlight  "#caf1c6")
    (light-green-highlight "#d5fdd2")
-   (dark-red-highlight    "#f7c8c8")
+   (dark-red-highlight    "#f99999")
+   (medium-red-highlight  "#f7c8c8")
    (light-red-highlight   "#fbdcdc"))
 
     ;; Set faces
@@ -134,11 +135,11 @@
 	 (error               (:foreground auburn))
      (success             (:foreground lake))
      (warning             (:foreground sunglow))
-     (alert-trivial-face  (:foreground lake                                  :weight 'bold))
-     (alert-low-face      (:foreground sunglow                               :weight 'bold))
-     (alert-moderate-face (:foreground sunglow                               :weight 'bold))
-     (alert-high-face     (:foreground auburn                                :weight 'bold))
-     (alert-urgent-face   (:foreground auburn :background dark-red-highlight :weight 'bold))
+     (alert-trivial-face  (:foreground lake                                    :weight 'bold))
+     (alert-low-face      (:foreground sunglow                                 :weight 'bold))
+     (alert-moderate-face (:foreground sunglow                                 :weight 'bold))
+     (alert-high-face     (:foreground auburn                                  :weight 'bold))
+     (alert-urgent-face   (:foreground auburn :background medium-red-highlight :weight 'bold))
      ;; (trailing-whitespace ())
      ;; (escape-glyph        ())
      (header-line         (:background cool-light-grey :foreground black))
@@ -208,7 +209,7 @@
      ;; (whitespace-tab              ())
      ;; (whitespace-newline          ())
      ;; (whitespace-trailing         ())
-     (whitespace-line             (:foreground auburn :background dark-red-highlight))
+     (whitespace-line             (:foreground auburn :background medium-red-highlight))
      ;; (whitespace-space-before-tab ())
      ;; (whitespace-indentation      ())
      ;; (whitespace-empty            ())
@@ -217,7 +218,7 @@
      ;; Built-in show-paren-mode
      (show-paren-match            (:foreground cobalt :background light-blue-highlight :weight 'bold))
      (show-paren-match-expression (:foreground cobalt :background light-blue-highlight :weight 'bold))
-     (show-paren-mismatch         (:foreground auburn :background dark-red-highlight   :weight 'bold))
+     (show-paren-mismatch         (:foreground auburn :background medium-red-highlight :weight 'bold))
 
 	 ;; ;; Rainbow delimiters
 	 ;; (rainbow-delimiters-depth-1-face   (:background dark-blue-highlight))
@@ -232,7 +233,7 @@
      ;; (rainbow-delimiters-depth-10-face  ())
      ;; (rainbow-delimiters-depth-11-face  ())
      ;; (rainbow-delimiters-depth-12-face  ())
-     (rainbow-delimiters-unmatched-face (:background dark-red-highlight))
+     (rainbow-delimiters-unmatched-face (:background medium-red-highlight))
 
 	 ;; Outline faces
 	 ;; Note that the Org mode headings ('org-level-N') faces inherit these
@@ -326,7 +327,7 @@
      ;; (magit-diff-hunk-heading-selection ())
      ;; (magit-diff-lines-heading          ())
      (magit-diff-removed                (:foreground auburn :background light-red-highlight))
-     (magit-diff-removed-highlight      (:foreground auburn :background dark-red-highlight))
+     (magit-diff-removed-highlight      (:foreground auburn :background medium-red-highlight))
      (magit-diffstat-added              (:foreground grass))
      (magit-diffstat-removed            (:foreground auburn))
      ;; (magit-dimmed                      ())
@@ -378,7 +379,7 @@
 
      (diff-hl-change (:foreground dark-blue-highlight  :background dark-blue-highlight))
      (diff-hl-insert (:foreground dark-green-highlight :background dark-green-highlight))
-     (diff-hl-delete (:foreground dark-red-highlight   :background dark-red-highlight))
+     (diff-hl-delete (:foreground medium-red-highlight :background medium-red-highlight))
 
 
 	 ;; |------------- COMPLETION & SEARCH -------------|
@@ -506,7 +507,7 @@
      (symbol-overlay-face-1       (:background dark-green-highlight))
      (symbol-overlay-face-2       (:background soft-yellow))
      (symbol-overlay-face-3       (:background selection))
-     (symbol-overlay-face-4       (:background dark-red-highlight))
+     (symbol-overlay-face-4       (:background medium-red-highlight))
      (symbol-overlay-face-5       (:background light-blue-highlight))
 
      ;; Compilation mode
@@ -534,14 +535,14 @@
 	 ;; (cider-debug-code-overlay-face ())
      (cider-deprecated-face             (:foreground black  :background cool-light-grey :strike-through cool-medium-grey))
      ;; (cider-enlightened-local-face  ())
-     (cider-error-highlight-face        (:foreground auburn :background dark-red-highlight))
+     (cider-error-highlight-face        (:foreground auburn :background medium-red-highlight))
      (cider-error-overlay-face          (:inherit    'cider-error-highlight-face))
      (cider-fringe-good-face            (:foreground dark-blue-highlight))
      (cider-instrumented-face           (:background light-blue-highlight :box (:color lake :line-width -1)))
      (cider-result-overlay-face         (:background light-blue-highlight))
      (cider-test-success-face           (:foreground lake   :background dark-green-highlight))
      (cider-test-error-face             (:foreground black  :background soft-yellow))
-     (cider-test-failure-face           (:foreground auburn :background dark-red-highlight))
+     (cider-test-failure-face           (:foreground auburn :background medium-red-highlight))
      ;; (cider-traced                  ())
      ;; (cider-warning-highlight-face  ())
      (cider-stacktrace-error-class-face (:inherit    'error))
@@ -581,7 +582,7 @@
      (ansi-color-bright-cyan    (:foreground selection))
      (ansi-color-bright-green   (:foreground dark-green-highlight))
      (ansi-color-bright-magenta (:foreground dark-blue-highlight))
-     (ansi-color-bright-red     (:foreground dark-red-highlight))
+     (ansi-color-bright-red     (:foreground medium-red-highlight))
      (ansi-color-bright-white   (:foreground background))
      (ansi-color-bright-yellow  (:foreground soft-yellow))
      ;; (ansi-color-bold           ())
@@ -598,8 +599,7 @@
 
      ;; Misc
      (shr-mark  (:inherit 'highlight))
-     (homoglyph (:foreground aqua))
-     ))
+     (homoglyph (:foreground aqua))))
 
 (provide-theme 'south)
 
