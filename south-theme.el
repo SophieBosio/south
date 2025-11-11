@@ -98,7 +98,8 @@
 
    ;; Background colours
    (selection             "#ceeaff")      ; Medium blue
-   (dark-blue-highlight   "#c2d6f2")
+   (dark-blue-highlight   "#93bcf5")
+   (medium-blue-highlight "#c2d6f2")
    (light-blue-highlight  "#d9edfc")
    (dark-green-highlight  "#caf1c6")
    (light-green-highlight "#d5fdd2")
@@ -144,7 +145,7 @@
      ;; (escape-glyph        ())
      (header-line         (:background cool-light-grey :foreground black))
      (highlight           (:background dark-green-highlight))
-	 (lazy-highlight      (:background dark-blue-highlight))
+	 (lazy-highlight      (:background medium-blue-highlight))
      (match               (:inherit 'highlight))
      ;; (homoglyph           ())
      ;; (nobreak-space       ())
@@ -221,7 +222,7 @@
      (show-paren-mismatch         (:foreground auburn :background medium-red-highlight :weight 'bold))
 
 	 ;; ;; Rainbow delimiters
-	 ;; (rainbow-delimiters-depth-1-face   (:background dark-blue-highlight))
+	 ;; (rainbow-delimiters-depth-1-face   (:background medium-blue-highlight))
      ;; (rainbow-delimiters-depth-2-face   ())
      ;; (rainbow-delimiters-depth-3-face   ())
      ;; (rainbow-delimiters-depth-4-face   ())
@@ -377,9 +378,9 @@
 
      ;; ;;; diff-hl
 
-     (diff-hl-change (:foreground dark-blue-highlight  :background dark-blue-highlight))
-     (diff-hl-insert (:foreground dark-green-highlight :background dark-green-highlight))
-     (diff-hl-delete (:foreground medium-red-highlight :background medium-red-highlight))
+     (diff-hl-change (:foreground medium-blue-highlight :background medium-blue-highlight))
+     (diff-hl-insert (:foreground dark-green-highlight  :background dark-green-highlight))
+     (diff-hl-delete (:foreground medium-red-highlight  :background medium-red-highlight))
 
 
 	 ;; |------------- COMPLETION & SEARCH -------------|
@@ -405,16 +406,16 @@
      (ag-match-face (:inherit    'highlight))
 
 	 ;; Company
-     (company-scrollbar-bg                 (:background dark-blue-highlight))
+     (company-scrollbar-bg                 (:background medium-blue-highlight))
      (company-scrollbar-fg                 (:background lake))
-     (company-tooltip                      (:background darker-background   :foreground lake))
+     (company-tooltip                      (:background darker-background     :foreground lake))
      ;; (company-tooltip-annotation           ())
      ;; (company-tooltip-annotation-selection ())
-     (company-tooltip-selection            (:background dark-blue-highlight :foreground lake))
+     (company-tooltip-selection            (:background medium-blue-highlight :foreground lake))
      ;; (company-tooltip-common               ())
      ;; (company-tooltip-common-selection     ())
      ;; (company-preview-common               ())
-     (company-preview                      (:background dark-blue-highlight :foreground lake))
+     (company-preview                      (:background medium-blue-highlight :foreground lake))
      ;; (company-preview-search               ())
      ;; (company-template-field               ())
      ;; (company-echo-common                  ())
@@ -428,7 +429,7 @@
      (corfu-deprecated (:foreground black :background darker-background :strike-through black))
 
 	 ;; Marginalia
-     ;; (marginalia-documentation (:foreground dark-blue-highlight))
+     ;; (marginalia-documentation (:foreground medium-blue-highlight))
 
      ;; Orderless
      (orderless-match-face-0 (:inherit   'completions-common-part))
@@ -537,7 +538,7 @@
      ;; (cider-enlightened-local-face  ())
      (cider-error-highlight-face        (:foreground auburn :background medium-red-highlight))
      (cider-error-overlay-face          (:inherit    'cider-error-highlight-face))
-     (cider-fringe-good-face            (:foreground dark-blue-highlight))
+     (cider-fringe-good-face            (:foreground medium-blue-highlight))
      (cider-instrumented-face           (:background light-blue-highlight :box (:color lake :line-width -1)))
      (cider-result-overlay-face         (:background light-blue-highlight))
      (cider-test-success-face           (:foreground lake   :background dark-green-highlight))
@@ -581,7 +582,7 @@
      (ansi-color-bright-blue    (:foreground light-blue-highlight))
      (ansi-color-bright-cyan    (:foreground selection))
      (ansi-color-bright-green   (:foreground dark-green-highlight))
-     (ansi-color-bright-magenta (:foreground dark-blue-highlight))
+     (ansi-color-bright-magenta (:foreground medium-blue-highlight))
      (ansi-color-bright-red     (:foreground medium-red-highlight))
      (ansi-color-bright-white   (:foreground background))
      (ansi-color-bright-yellow  (:foreground soft-yellow))
