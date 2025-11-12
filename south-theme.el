@@ -97,15 +97,16 @@
    (soft-yellow           "#f9e7c3")
 
    ;; Background colours
-   (selection             "#ceeaff")      ; Medium blue
-   (dark-blue-highlight   "#93bcf5")
-   (medium-blue-highlight "#c2d6f2")
-   (light-blue-highlight  "#d9edfc")
-   (dark-green-highlight  "#caf1c6")
-   (light-green-highlight "#d5fdd2")
-   (dark-red-highlight    "#f99999")
-   (medium-red-highlight  "#f7c8c8")
-   (light-red-highlight   "#fbdcdc"))
+   (selection              "#ceeaff")      ; Medium blue
+   (dark-blue-highlight    "#93bcf5")
+   (medium-blue-highlight  "#c2d6f2")
+   (light-blue-highlight   "#d9edfc")
+   (dark-green-highlight   "#c5e7d1")
+   (medium-green-highlight "#caf1c6")
+   (light-green-highlight  "#d5fdd2")
+   (dark-red-highlight     "#f99999")
+   (medium-red-highlight   "#f7c8c8")
+   (light-red-highlight    "#fbdcdc"))
 
     ;; Set faces
     (
@@ -318,7 +319,7 @@
      (magit-diff-file-heading-highlight (:background darker-background))
      (magit-diff-context-highlight      (:background darker-background))
      (magit-diff-added                  (:foreground grass :background light-green-highlight))
-     (magit-diff-added-highlight        (:foreground grass :background dark-green-highlight))
+     (magit-diff-added-highlight        (:foreground grass :background medium-green-highlight))
      ;; (magit-diff-base                   ())
      ;; (magit-diff-base-highlight         ())
      ;; (magit-diff-context                ())
@@ -378,9 +379,9 @@
 
      ;; ;;; diff-hl
 
-     (diff-hl-change (:foreground medium-blue-highlight :background medium-blue-highlight))
-     (diff-hl-insert (:foreground dark-green-highlight  :background dark-green-highlight))
-     (diff-hl-delete (:foreground medium-red-highlight  :background medium-red-highlight))
+     (diff-hl-change (:foreground medium-blue-highlight  :background medium-blue-highlight))
+     (diff-hl-insert (:foreground medium-green-highlight :background medium-green-highlight))
+     (diff-hl-delete (:foreground medium-red-highlight   :background medium-red-highlight))
 
 
 	 ;; |------------- COMPLETION & SEARCH -------------|
@@ -541,7 +542,7 @@
      (cider-fringe-good-face            (:foreground medium-blue-highlight))
      (cider-instrumented-face           (:background light-blue-highlight :box (:color lake :line-width -1)))
      (cider-result-overlay-face         (:background light-blue-highlight))
-     (cider-test-success-face           (:foreground lake   :background dark-green-highlight))
+     (cider-test-success-face           (:foreground lake   :background medium-green-highlight))
      (cider-test-error-face             (:foreground black  :background soft-yellow))
      (cider-test-failure-face           (:foreground auburn :background medium-red-highlight))
      ;; (cider-traced                  ())
@@ -581,7 +582,7 @@
      (ansi-color-bright-black   (:foreground black))
      (ansi-color-bright-blue    (:foreground light-blue-highlight))
      (ansi-color-bright-cyan    (:foreground selection))
-     (ansi-color-bright-green   (:foreground dark-green-highlight))
+     (ansi-color-bright-green   (:foreground medium-green-highlight))
      (ansi-color-bright-magenta (:foreground medium-blue-highlight))
      (ansi-color-bright-red     (:foreground medium-red-highlight))
      (ansi-color-bright-white   (:foreground background))
