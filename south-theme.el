@@ -379,9 +379,9 @@
 
      ;; ;;; diff-hl
 
-     (diff-hl-change (:foreground medium-blue-highlight  :background medium-blue-highlight))
-     (diff-hl-insert (:foreground medium-green-highlight :background medium-green-highlight))
-     (diff-hl-delete (:foreground medium-red-highlight   :background medium-red-highlight))
+     (diff-hl-change (:foreground medium-blue-highlight :background medium-blue-highlight))
+     (diff-hl-insert (:foreground dark-green-highlight  :background dark-green-highlight))
+     (diff-hl-delete (:foreground medium-red-highlight  :background medium-red-highlight))
 
 
 	 ;; |------------- COMPLETION & SEARCH -------------|
