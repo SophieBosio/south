@@ -82,7 +82,7 @@
    (persian               "#499794")
 
    ;; Yellow
-   (sunglow               "#efc267")
+   (gold                  "#D99B20")
 
    ;; Orange
    (orange                "#cc4705")
@@ -93,20 +93,18 @@
    ;; Purple
    (purple                "#615FB9")
 
-   ;; Yellow
-   (soft-yellow           "#f9e7c3")
-
    ;; Background colours
-   (selection              "#ceeaff")      ; Medium blue
-   (dark-blue-highlight    "#93bcf5")
-   (medium-blue-highlight  "#c2d6f2")
-   (light-blue-highlight   "#d9edfc")
-   (dark-green-highlight   "#c5e7d1")
-   (medium-green-highlight "#caf1c6")
-   (light-green-highlight  "#d5fdd2")
-   (dark-red-highlight     "#f99999")
-   (medium-red-highlight   "#f7c8c8")
-   (light-red-highlight    "#fbdcdc"))
+   (selection               "#ceeaff")      ; Medium blue
+   (dark-blue-highlight     "#93bcf5")
+   (medium-blue-highlight   "#c2d6f2")
+   (light-blue-highlight    "#d9edfc")
+   (dark-green-highlight    "#c5e7d1")
+   (medium-green-highlight  "#caf1c6")
+   (light-green-highlight   "#d5fdd2")
+   (dark-red-highlight      "#f99999")
+   (medium-red-highlight    "#f7c8c8")
+   (light-red-highlight     "#fbdcdc")
+   (medium-yellow-highlight "#efc267"))
 
     ;; Set faces
     (
@@ -136,10 +134,10 @@
 	 ;; System faces
 	 (error               (:foreground auburn))
      (success             (:foreground lake))
-     (warning             (:foreground sunglow))
+     (warning             (:foreground gold))
      (alert-trivial-face  (:foreground lake                                    :weight 'bold))
-     (alert-low-face      (:foreground sunglow                                 :weight 'bold))
-     (alert-moderate-face (:foreground sunglow                                 :weight 'bold))
+     (alert-low-face      (:foreground gold                                    :weight 'bold))
+     (alert-moderate-face (:foreground gold                                    :weight 'bold))
      (alert-high-face     (:foreground auburn                                  :weight 'bold))
      (alert-urgent-face   (:foreground auburn :background medium-red-highlight :weight 'bold))
      ;; (trailing-whitespace ())
@@ -257,7 +255,7 @@
      (org-drawer               (:foreground cool-dark-grey))
      ;; (org-column               ())
      ;; (org-column-title         ())
-     (org-warning              (:foreground sunglow))
+     (org-warning              (:foreground gold))
      ;; (org-archived             ())
      (org-link                 (:foreground denim :underline (:color denim :style 'line)))
      ;; (org-footnote             ())
@@ -453,13 +451,13 @@
      ;; (flyspell-incorrect ())
 
 	 ;; ;; Flycheck
-	 (flycheck-warning            (:underline (:style 'wave :color sunglow)))
+	 (flycheck-warning            (:underline (:style 'wave :color gold)))
      (flycheck-error              (:underline (:style 'wave :color dark-red-highlight)))
      (flycheck-info               (:underline (:style 'wave :color dark-blue-highlight)))
-     (flycheck-fringe-warning     (:foreground sunglow))
+     (flycheck-fringe-warning     (:foreground gold))
      (flycheck-fringe-error       (:foreground dark-red-highlight))
      (flycheck-fringe-info        (:foreground dark-blue-highlight))
-     (flycheck-error-list-warning (:foreground sunglow             :bold t))
+     (flycheck-error-list-warning (:foreground gold             :bold t))
      (flycheck-error-list-error   (:foreground dark-red-highlight  :bold t))
      (flycheck-error-list-info    (:foreground dark-blue-highlight :bold t))
 
@@ -502,12 +500,12 @@
      (lsp-installation-buffer-face             (:foreground lake))
      (lsp-flycheck-warning-unnecessary-face    (:inherit    'font-lock-comment-face))
      (lsp-flycheck-info-unnecessary-face       (:inherit    'font-lock-comment-face))
-     (lsp-modeline-code-actions-preferred-face (:foreground sunglow))
+     (lsp-modeline-code-actions-preferred-face (:foreground gold))
 
      ;; Symbol overlays
      (symbol-overlay-default-face (:inherit    'unspecified))
      (symbol-overlay-face-1       (:background dark-green-highlight))
-     (symbol-overlay-face-2       (:background soft-yellow))
+     (symbol-overlay-face-2       (:background medium-yellow-highlight))
      (symbol-overlay-face-3       (:background selection))
      (symbol-overlay-face-4       (:background medium-red-highlight))
      (symbol-overlay-face-5       (:background light-blue-highlight))
@@ -543,7 +541,7 @@
      (cider-instrumented-face           (:background light-blue-highlight :box (:color lake :line-width -1)))
      (cider-result-overlay-face         (:background light-blue-highlight))
      (cider-test-success-face           (:foreground lake   :background medium-green-highlight))
-     (cider-test-error-face             (:foreground black  :background soft-yellow))
+     (cider-test-error-face             (:foreground black  :background medium-yellow-highlight))
      (cider-test-failure-face           (:foreground auburn :background medium-red-highlight))
      ;; (cider-traced                  ())
      ;; (cider-warning-highlight-face  ())
@@ -576,7 +574,7 @@
      (ansi-color-cyan           (:foreground aqua))
      (ansi-color-green          (:foreground lake))
      (ansi-color-magenta        (:foreground purple))
-     (ansi-color-red            (:foreground sunglow))
+     (ansi-color-red            (:foreground gold))
      (ansi-color-white          (:foreground cool-medium-grey))
      (ansi-color-yellow         (:foreground orange))
      (ansi-color-bright-black   (:foreground black))
@@ -586,7 +584,7 @@
      (ansi-color-bright-magenta (:foreground medium-blue-highlight))
      (ansi-color-bright-red     (:foreground medium-red-highlight))
      (ansi-color-bright-white   (:foreground background))
-     (ansi-color-bright-yellow  (:foreground soft-yellow))
+     (ansi-color-bright-yellow  (:foreground medium-yellow-highlight))
      ;; (ansi-color-bold           ())
      ;; (ansi-color-italic         ())
      ;; (ansi-color-underline      ())
