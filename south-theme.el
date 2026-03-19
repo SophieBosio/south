@@ -176,6 +176,7 @@
      ;; (font-lock-preprocessor-char-face    ())
      ;; (font-lock-regexp-grouping-backslash ())
      ;; (font-lock-regexp-grouping-construct ())
+     (elisp-shorthand-font-lock-face      (:foreground aqua))
 
 	 ;; ;; Faces in 'Customize Group' UI
 	 ;; (widget-field        ())
