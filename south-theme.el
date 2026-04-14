@@ -82,10 +82,10 @@
    (persian               "#499794")
 
    ;; Yellow
-   (gold                  "#D99B20")
+   (gold                  "#d99610")
 
    ;; Orange
-   (orange                "#cc4705")
+   (orange                "#f29130")
 
    ;; Red
    (auburn                "#c1293d")
@@ -135,9 +135,9 @@
 	 ;; System faces
 	 (error               (:foreground auburn))
      (success             (:foreground lake))
-     (warning             (:foreground gold))
+     (warning             (:foreground orange))
      (alert-trivial-face  (:foreground lake                                    :weight 'bold))
-     (alert-low-face      (:foreground gold                                    :weight 'bold))
+     (alert-low-face      (:foreground aqua                                    :weight 'bold))
      (alert-moderate-face (:foreground gold                                    :weight 'bold))
      (alert-high-face     (:foreground auburn                                  :weight 'bold))
      (alert-urgent-face   (:foreground auburn :background medium-red-highlight :weight 'bold))
@@ -453,15 +453,17 @@
      ;; (flyspell-incorrect ())
 
 	 ;; ;; Flycheck
-	 (flycheck-warning            (:underline (:style 'wave :color gold)))
+	 (flycheck-warning            (:foreground cool-dark-grey
+                                   :underline (:style 'wave :color medium-yellow-highlight)))
      (flycheck-error              (:underline (:style 'wave :color dark-red-highlight)))
-     (flycheck-info               (:underline (:style 'wave :color dark-blue-highlight)))
-     (flycheck-fringe-warning     (:foreground gold))
+     (flycheck-info               (:foreground cool-dark-grey
+                                   :underline (:style 'wave :color dark-blue-highlight)))
+     (flycheck-fringe-warning     (:foreground medium-yellow-highlight))
      (flycheck-fringe-error       (:foreground dark-red-highlight))
      (flycheck-fringe-info        (:foreground dark-blue-highlight))
-     (flycheck-error-list-warning (:foreground gold             :bold t))
-     (flycheck-error-list-error   (:foreground dark-red-highlight  :bold t))
-     (flycheck-error-list-info    (:foreground dark-blue-highlight :bold t))
+     (flycheck-error-list-warning (:foreground gold   :bold t))
+     (flycheck-error-list-error   (:foreground auburn :bold t))
+     (flycheck-error-list-info    (:foreground lake   :bold t))
 
 	 
 	 ;; |------------- TERMINAL -------------|
@@ -500,8 +502,8 @@
      (lsp-face-highlight-read                  (:inherit    'unspecified))
      (lsp-face-highlight-write                 (:inherit    'highlight))
      (lsp-installation-buffer-face             (:foreground lake))
-     (lsp-flycheck-warning-unnecessary-face    (:inherit    'font-lock-comment-face))
-     (lsp-flycheck-info-unnecessary-face       (:inherit    'font-lock-comment-face))
+     (lsp-flycheck-warning-unnecessary-face    (:inherit    'flycheck-warning))
+     (lsp-flycheck-info-unnecessary-face       (:inherit    'flycheck-info))
      (lsp-modeline-code-actions-preferred-face (:foreground gold))
 
      ;; Symbol overlays
