@@ -104,7 +104,8 @@
    (dark-red-highlight      "#f99999")
    (medium-red-highlight    "#f7c8c8")
    (light-red-highlight     "#fbdcdc")
-   (medium-yellow-highlight "#efc267"))
+   (medium-yellow-highlight "#efc267")
+   (light-yellow-highlight  "#f9e7c3"))
 
     ;; Set faces
     (
@@ -506,7 +507,7 @@
      ;; Symbol overlays
      (symbol-overlay-default-face (:inherit    'unspecified))
      (symbol-overlay-face-1       (:background dark-green-highlight))
-     (symbol-overlay-face-2       (:background medium-yellow-highlight))
+     (symbol-overlay-face-2       (:background light-yellow-highlight))
      (symbol-overlay-face-3       (:background selection))
      (symbol-overlay-face-4       (:background medium-red-highlight))
      (symbol-overlay-face-5       (:background light-blue-highlight))
