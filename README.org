@@ -87,7 +87,7 @@ Currently, South theme defines faces for font lock faces, implicitly supporting 
 
 * Ports
 
-I was pretty stoked to see that this theme has been ported - maybe to your favourite editor? Thanks to @citizen428 for showing me these ports 😊
+I was pretty stoked to see that this theme has been ported - maybe to your favourite editor? Thanks to Michael Kohl ([[https://github.com/citizen428][@citizen428]]) for showing me these ports 😊
 
 ** VS Code
 
