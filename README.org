@@ -85,4 +85,21 @@ Currently, South theme defines faces for font lock faces, implicitly supporting 
 - =org-mode=
 - =vertico=
 
+* Ports
+
+I was pretty stoked to see that this theme has been ported - maybe to your favourite editor? Thanks to @citizen428 for showing me these ports 😊
+
+** VS Code
+
+https://github.com/citizen428/south-vscode - by [[https://github.com/citizen428][@citizen428]]
+
+or, directly in the VS Code marketplace:
+https://marketplace.visualstudio.com/items?itemName=citizen428.south
+
+** NeoVim
+
+https://github.com/arnauKL/south.nvim - by [[https://github.com/arnauKL][@arnauKL]]
+
+-----
+
 Copyright 2024-2025 (c) Sophie Bosio
